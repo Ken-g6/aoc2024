@@ -7,7 +7,7 @@ my $mulstr = "";
 
 while(<>) {
   chomp;
-  $mulstr .= $_;
+  $mulstr .= " $_";
 }
 $mulstr =~ s/don't\(\).*?(do\(\)|$)//g;
 my @muls = ($mulstr =~ /mul\([0-9]+,[0-9]+\)/g);
